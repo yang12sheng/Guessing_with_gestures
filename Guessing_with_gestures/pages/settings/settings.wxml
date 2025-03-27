@@ -1,0 +1,12 @@
+<!-- category.wxml -->
+<view class="container">
+    <!-- 类别选择 -->
+    <radio-group class="category-radio-group" bindchange="onCategoryChange">
+        <label wx:for="{{categories}}" wx:key="id">
+            <radio value="{{item.name}}" checked="{{item.checked}}">{{item.name}}</radio>
+        </label>
+    </radio-group>
+
+    <!-- 保存按钮 -->
+    <button bindtap="saveSelection" class="save-button">保存</button>
+</view>

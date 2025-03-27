@@ -1,0 +1,49 @@
+/* game.wxss */
+.container { width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+
+.timer, .score {
+  font-size: 25rpx;
+  margin-bottom:10rpx;
+}
+
+.word-display {
+  width: 96%;
+  height: 52%; /* 固定高度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20 rpx 20;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+}
+
+.current-word {
+  
+  font-weight: bold;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10rpx; /* 顶部间距 */
+}
+
+.action-button {
+  width: 100rpx; /* 按钮宽度 */
+  height: 55rpx;
+  font-size: 28rpx;
+  margin: 0 15rpx; /* 左右外边距，调整这个值来改变按钮之间的距离 */
+  background-color: #333; 
+  color: white;
+  border-radius: 10rpx;
+}

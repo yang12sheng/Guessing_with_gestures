@@ -1,0 +1,17 @@
+/* leaderboard.wxss */
+.container { width: 100%;
+  padding: 20rpx;
+}
+
+.no-data-message {
+  text-align: center;
+  color: #888;
+  margin-top: 50rpx;
+}
+
+.leaderboard-item {
+  margin-bottom: 10rpx;
+  padding: 10rpx;
+  background-color: #f5f5f5;
+  border-radius: 5rpx;
+}

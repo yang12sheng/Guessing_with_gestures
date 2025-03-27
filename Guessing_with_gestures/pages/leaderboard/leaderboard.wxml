@@ -1,0 +1,15 @@
+<!-- leaderboard.wxml -->
+<view class="container">
+  <block wx:if="{{noDataMessage}}">
+    <view class="no-data-message">
+      <text>{{noDataMessage}}</text>
+    </view>
+  </block>
+  <block wx:else>
+    <block wx:for="{{leaderboardData}}" wx:key="index">
+      <view class="leaderboard-item">
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </block>
+</view>

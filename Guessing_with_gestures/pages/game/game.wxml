@@ -1,0 +1,13 @@
+<!-- game.wxml -->
+<view class="container">
+    <text class="timer">剩余时间: {{timer}} 秒</text>
+    <text class="score">已猜对: {{score}}</text>
+    <view class="word-display">
+        <text class="current-word"style="font-size: {{fontSize}}rpx;">{{currentWord}}</text>
+    </view>
+    <view class="button-container">
+        <button class="action-button" bindtap="correctAnswer">答对了</button>
+        <button class="action-button" bindtap="skipWord">跳过</button>
+        <button class="action-button" bindtap="endGame">结束</button>
+    </view>
+</view>

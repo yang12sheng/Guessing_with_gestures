@@ -1,0 +1,29 @@
+<view class="container">
+  <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange">
+    <view class="picker">
+      请选择修改题库类别: {{selectedCategory}}
+    </view>
+  </picker>
+  <input class="inputtext" type="text" placeholder="输入词语" value="{{word}}" bindinput="onWordInput" />
+  <button bindtap="addWord">添加词语</button>
+   <!-- 删除词语 -->
+   <view class="section">
+    <input placeholder="输入要删除的词语" value="{{deleteWord}}" bindinput="onDeleteWordInput" />
+    <button bindtap="deleteWord">删除词语</button>
+  </view>
+  <button bindtap="saveData">保存</button>
+  <button bindtap="importData">导入</button>
+ <text class="tikutitle">题库内容</text> 
+  <view class="container">
+  <view class="category-card" wx:for="{{displayQuestionBank}}" wx:key="index">
+    <text class="category-title">{{item.category}}</text>
+    <view class="word-list">
+      <block wx:for="{{item.words}}" wx:key="index">
+        <text class="word-item">{{item}}</text>
+      </block>
+    </view>
+  </view>
+</view>
+  <!-- 显示题库内容 -->
+  
+</view>

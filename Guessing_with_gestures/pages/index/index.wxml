@@ -1,0 +1,17 @@
+<!-- index.wxml -->
+<view class="container">
+    <!-- 游戏标题 -->
+    <text class="title">亲子比划猜</text>
+
+    <!-- 开始游戏按钮 -->
+    <button bindtap="startGame">开始游戏</button>
+
+    <!-- 设置按钮 -->
+    <button bindtap="openSettings">设置</button>
+
+    <!-- 排行榜按钮 -->
+    <button bindtap="viewLeaderboard">排行榜</button>
+
+    <!-- 管理按钮 -->
+    <button bindtap="adminPanel">管理</button>
+</view>
